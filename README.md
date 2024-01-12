@@ -25,3 +25,14 @@ Build a project management using Django 5.x
         new file:   config/urls.py
         new file:   config/wsgi.py
         new file:   manage.py
+
+#### 2. Create app 'projects'
+
+        modified:   README.md
+        new file:   projects/__init__.py
+        new file:   projects/admin.py
+        new file:   projects/apps.py
+        new file:   projects/migrations/__init__.py
+        new file:   projects/models.py
+        new file:   projects/tests.py
+        new file:   projects/views.py
