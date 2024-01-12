@@ -36,3 +36,8 @@ Build a project management using Django 5.x
         new file:   projects/models.py
         new file:   projects/tests.py
         new file:   projects/views.py
+
+#### 3. Register projects to config/settings.py
+
+        modified:   README.md
+        modified:   config/settings.py
