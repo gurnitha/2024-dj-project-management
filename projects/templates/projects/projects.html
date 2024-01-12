@@ -6,7 +6,11 @@
 	<title>Projects</title>
 </head>
 <body>
-	<h1>Getting started with django</h1>
-	<p>{{project1}}</p>
+	<h1>My Projects</h1>
+
+	{% for project in projects%}
+		<p>{{project.id}}</p>
+		<p>{{project.title}}</p>
+	{% endfor%}
 </body>
 </html>

@@ -66,3 +66,16 @@ Build a project management using Django 5.x
         modified:   README.md
         modified:   projects/templates/projects/projects.html
         modified:   projects/views.py
+
+#### 4. Loops and conditionals in templates
+
+        modified:   README.md
+        modified:   projects/templates/projects/projects.html
+        modified:   projects/views.py
+
+        Note: 
+
+        1. Create dummy data array
+        2. Fetch it to views and render in projects page
+
+        :)

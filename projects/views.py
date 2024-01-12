@@ -6,5 +6,17 @@ def home(request):
 	return render(request, 'index.html')
 
 def projects(request):
-	context = {'project1': 'My first project'}
+
+	projects = [
+		{
+			'id':1,
+			'title':'PROJECT A' 
+		},
+		{
+			'id':2,
+			'title':'PROJECT B' 
+		}
+	]
+
+	context = {'projects': projects}
 	return render(request, 'projects/projects.html', context)
