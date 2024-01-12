@@ -1,16 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Projects</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block content %}
+
 	<h1>My Projects</h1>
 
-	{% for project in projects%}
-		<p>{{project.id}}</p>
-		<p>{{project.title}}</p>
+	{% for project in projects %}
+
+	<p>{{project.id}}</p>
+	<p> {{project.title}}</p>
+	
 	{% endfor%}
-</body>
-</html>
+{% endblock %}

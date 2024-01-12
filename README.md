@@ -79,3 +79,16 @@ Build a project management using Django 5.x
         2. Fetch it to views and render in projects page
 
         :)
+
+#### 5. Add and load static files
+
+        modified:   README.md
+        modified:   config/settings.py
+        modified:   config/urls.py
+        new file:   projects/static/css/bootstrap.min.css
+        new file:   projects/static/css/main.css
+        modified:   projects/templates/projects/projects.html
+        new file:   templates/base.html
+        modified:   templates/index.html
+        new file:   templates/navbar.html
+
