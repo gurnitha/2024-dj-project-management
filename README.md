@@ -41,3 +41,6 @@ Build a project management using Django 5.x
 
         modified:   README.md
         modified:   config/settings.py
+
+
+## 3. TEMPLATES
