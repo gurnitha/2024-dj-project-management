@@ -52,3 +52,11 @@ Build a project management using Django 5.x
         new file:   projects/templates/projects/projects.html
         new file:   projects/urls.py
         modified:   projects/views.py
+
+#### 2. Create home page
+
+        modified:   README.md
+        modified:   config/settings.py
+        modified:   projects/urls.py
+        modified:   projects/views.py
+        new file:   templates/index.html
