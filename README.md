@@ -12,3 +12,6 @@ Build a project management using Django 5.x
 
         modified:   README.md
         new file:   requirements.txt
+
+
+## 2. DJANGO PROJECT AND APPS
