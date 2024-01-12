@@ -6,4 +6,5 @@ def home(request):
 	return render(request, 'index.html')
 
 def projects(request):
-	return render(request, 'projects/projects.html')
+	context = {'project1': 'My first project'}
+	return render(request, 'projects/projects.html', context)

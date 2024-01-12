@@ -60,3 +60,9 @@ Build a project management using Django 5.x
         modified:   projects/urls.py
         modified:   projects/views.py
         new file:   templates/index.html
+
+#### 3. Django template engine
+
+        modified:   README.md
+        modified:   projects/templates/projects/projects.html
+        modified:   projects/views.py
