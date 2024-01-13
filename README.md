@@ -335,3 +335,15 @@ Build a project management using Django 5.x
 
 
 ## 7. USER AUTHENTICATION
+
+#### 1. Create users app and register it to config/settings.py
+
+        modified:   README.md
+        modified:   config/settings.py
+        new file:   users/__init__.py
+        new file:   users/admin.py
+        new file:   users/apps.py
+        new file:   users/migrations/__init__.py
+        new file:   users/models.py
+        new file:   users/tests.py
+        new file:   users/views.py
