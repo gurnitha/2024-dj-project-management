@@ -130,3 +130,12 @@ class ProjectDeleteView(DeleteView):
 	model = Project
 	template_name = 'projects/project_confirm_delete.html'
 	success_url = reverse_lazy('projects')
+
+
+# Generic views: TaskDeleteView
+from django.views.generic.edit import CreateView,UpdateView,DeleteView
+from django.urls import reverse_lazy
+class TaskDeleteView(DeleteView):
+	model = Task
+	template_name = 'projects/task_confirm_delete.html'
+	success_url = reverse_lazy('tasks')
