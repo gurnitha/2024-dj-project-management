@@ -297,3 +297,10 @@ Build a project management using Django 5.x
         modified:   projects/views.py
 
         :)
+
+#### 9. Add links to navbar: Projects, Tasks, Create Task, and Create Project
+
+        modified:   README.md
+        modified:   templates/navbar.html
+
+        :)
