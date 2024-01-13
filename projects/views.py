@@ -86,11 +86,11 @@ def taskCreate(request):
 	return render(request, 'projects/task-create.html',context)
 
 
-# Generic views: TaskListView
-from django.views.generic import ListView
-class TaskListView(ListView):
-	model = Task
-	template_name = 'projects/tasks.html'
+# # Generic views: TaskListView
+# from django.views.generic import ListView
+# class TaskListView(ListView):
+# 	model = Task
+# 	template_name = 'projects/tasks.html'
 
 
 # Generic views: ProjectCreateView

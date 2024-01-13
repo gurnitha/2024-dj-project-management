@@ -273,3 +273,7 @@ Build a project management using Django 5.x
         Note:
 
         It worked :)
+
+#### 6.1 (Re-save) Generic views: ProjectCreateView
+
+        Note: I forgot to save views.py file. No changed was made.
