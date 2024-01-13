@@ -347,3 +347,12 @@ Build a project management using Django 5.x
         new file:   users/models.py
         new file:   users/tests.py
         new file:   users/views.py
+
+#### 2. User Registration
+
+        modified:   config/urls.py
+        new file:   users/templates/users/registration.html
+        new file:   users/urls.py
+        modified:   users/views.py
+
+        Note: It has no logic yet to be able register a new user
