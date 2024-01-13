@@ -201,3 +201,11 @@ Build a project management using Django 5.x
         modified:   projects/views.py
 
         :)
+
+#### 2. Display project details
+
+        modified:   README.md
+        new file:   projects/templates/projects/project-detail.html
+        modified:   projects/templates/projects/projects.html
+        modified:   projects/urls.py
+        modified:   projects/views.py
