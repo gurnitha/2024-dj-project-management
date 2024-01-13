@@ -332,3 +332,6 @@ Build a project management using Django 5.x
         modified:   projects/views.py
 
         :)
+
+
+## 7. USER AUTHENTICATION
