@@ -209,3 +209,14 @@ Build a project management using Django 5.x
         modified:   projects/templates/projects/projects.html
         modified:   projects/urls.py
         modified:   projects/views.py
+
+#### 3. Display all taks of the logged-in user
+
+        modified:   README.md
+        new file:   projects/templates/projects/tasks.html
+        modified:   projects/urls.py
+        modified:   projects/views.py
+
+        Note: Only task(s) of the logged-in user are displayed.
+
+        :)

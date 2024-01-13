@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.shortcuts import get_object_or_404
 
-from .models import Project 
+from .models import Project, Task 
 
 # Create your views here.
 
@@ -33,6 +33,21 @@ def projectList(request):
 
 def projectDetail(request,pk):
 	project = get_object_or_404(Project, id=pk)
-	project_tasks = project.task_set.all() # task_set.all() query, retrieves all the tasks related to a given project
+	'''
+	task_set.all() query, retrieves all the tasks 
+	related to a given project
+	'''
+	project_tasks = project.task_set.all()
 	context = {'project':project,'project_tasks':project_tasks} 
 	return render(request, 'projects/project-detail.html',context)
+
+
+def taskList(request):
+	''' 
+	fetches all the tasks assigned to the currently 
+	logged-in user and other unassigned tasks.
+	'''
+	user_tasks =Task.objects.filter(assignee=request.user) 
+	tasks = Task.objects.filter(assignee=None) # fetches  all  unassigned  tasks.
+	context = {'tasks':tasks,'user_tasks':user_tasks} 
+	return render(request, 'projects/tasks.html',context)
