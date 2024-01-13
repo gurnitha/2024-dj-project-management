@@ -13,4 +13,5 @@ urlpatterns  =  [
 
 	# CRUD
 	path('create-project', views.ProjectCreateView.as_view(), name ='create-project'),
+	path('update-project/<int:pk>', views.ProjectUpdateView.as_view(), name ='update-project'),
 ]

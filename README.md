@@ -277,3 +277,11 @@ Build a project management using Django 5.x
 #### 6.1 (Re-save) Generic views: ProjectCreateView
 
         Note: I forgot to save views.py file. No changed was made.
+
+#### 7. Generic views: ProjectUpdateView
+
+        modified:   README.md
+        modified:   projects/templates/projects/project-detail.html
+        new file:   projects/templates/projects/project_update_form.html
+        modified:   projects/urls.py
+        modified:   projects/views.py

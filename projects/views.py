@@ -104,3 +104,11 @@ class ProjectCreateView(CreateView):
 	success_url = reverse_lazy('projects')
 
 
+# Generic views: ProjectUpdateView
+from django.views.generic.edit import CreateView, UpdateView
+class ProjectUpdateView(UpdateView):
+	model = Project
+	template_name = 'projects/project_update_form.html'
+	fields = ["name","description"]
+	success_url = reverse_lazy('projects')
+
