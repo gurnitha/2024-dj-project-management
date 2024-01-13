@@ -110,3 +110,6 @@ Build a project management using Django 5.x
         modified:   config/settings.py
         new file:   projects/migrations/0001_initial.py
         modified:   projects/models.py
+
+
+## 5. ORM
