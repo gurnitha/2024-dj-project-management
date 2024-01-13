@@ -322,3 +322,13 @@ Build a project management using Django 5.x
         modified:   projects/views.py
 
         :)
+
+#### 12. Join Task
+
+        modified:   README.md
+        modified:   projects/templates/projects/projects.html
+        modified:   projects/templates/projects/task-detail.html
+        modified:   projects/urls.py
+        modified:   projects/views.py
+
+        :)

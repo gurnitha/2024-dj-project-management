@@ -139,3 +139,10 @@ class TaskDeleteView(DeleteView):
 	model = Task
 	template_name = 'projects/task_confirm_delete.html'
 	success_url = reverse_lazy('tasks')
+
+
+def joinTask(request,pk):
+	task =Task.objects.get(id=pk)
+	task.assignee=request.user
+	task.save()
+	return redirect('tasks')
