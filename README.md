@@ -189,3 +189,6 @@ Build a project management using Django 5.x
         modified:   README.md
         new file:   projects/migrations/0002_alter_task_options.py
         modified:   projects/models.py
+
+
+## 6. CRUD
