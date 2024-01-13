@@ -210,7 +210,7 @@ Build a project management using Django 5.x
         modified:   projects/urls.py
         modified:   projects/views.py
 
-#### 3. Display all taks of the logged-in user
+#### 3. Display all tasks of the logged-in user
 
         modified:   README.md
         new file:   projects/templates/projects/tasks.html
@@ -220,3 +220,18 @@ Build a project management using Django 5.x
         Note: Only task(s) of the logged-in user are displayed.
 
         :)
+
+#### 4. Display details task of the logged-in user
+
+        modified:   README.md
+        new file:   projects/templates/projects/task-detail.html
+        modified:   projects/templates/projects/tasks.html
+        modified:   projects/urls.py
+        modified:   projects/views.py
+
+        Note:
+
+        1. This code in taskList views does not show any instance.
+           but there are 2 tasks in admin belong to other users
+
+        ::)

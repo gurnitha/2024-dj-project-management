@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.shortcuts import get_object_or_404
+from django.db.models import Q
 
 from .models import Project, Task 
 
@@ -48,6 +49,13 @@ def taskList(request):
 	logged-in user and other unassigned tasks.
 	'''
 	user_tasks =Task.objects.filter(assignee=request.user) 
-	tasks = Task.objects.filter(assignee=None) # fetches  all  unassigned  tasks.
+	tasks = Task.objects.all().filter(assignee=None) # fetches  all  unassigned  tasks.
+	print(tasks)
 	context = {'tasks':tasks,'user_tasks':user_tasks} 
 	return render(request, 'projects/tasks.html',context)
+
+
+def taskDetail(request,pk):
+	task = get_object_or_404(Task, id=pk)
+	context = {'task':task}
+	return render(request, 'projects/task-detail.html',context)
