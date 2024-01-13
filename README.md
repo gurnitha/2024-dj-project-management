@@ -92,3 +92,8 @@ Build a project management using Django 5.x
         modified:   templates/index.html
         new file:   templates/navbar.html
 
+
+## 4. MODELS
+
+
+
