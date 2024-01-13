@@ -231,7 +231,16 @@ Build a project management using Django 5.x
 
         Note:
 
-        1. This code in taskList views does not show any instance.
-           but there are 2 tasks in admin belong to other users
+        1. In tasklist all tasks of logged-in user showed up in tasklist page.
+        2. There are 2 unassigned tasks and they are showed in tasklist page.
+        3. Both assigned tasks and unassigned tasks could be display its detail.
+        :: So, tasklist, unassigned tasks, and task-detail worked.
 
-        ::)
+        :)
+
+#### 4.1 Save views.py file as part of the no. 4 above
+
+        modified:   README.md
+        modified:   projects/views.py
+
+        Note: I forgot to save views.py file. No changed was made.

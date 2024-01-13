@@ -50,7 +50,7 @@ def taskList(request):
 	'''
 	user_tasks =Task.objects.filter(assignee=request.user) 
 	tasks = Task.objects.all().filter(assignee=None) # fetches  all  unassigned  tasks.
-	print(tasks)
+	# print(tasks)
 	context = {'tasks':tasks,'user_tasks':user_tasks} 
 	return render(request, 'projects/tasks.html',context)
 
