@@ -192,3 +192,12 @@ Build a project management using Django 5.x
 
 
 ## 6. CRUD
+
+#### 1. Display all projects
+
+        modified:   README.md
+        modified:   projects/templates/projects/projects.html
+        modified:   projects/urls.py
+        modified:   projects/views.py
+
+        :)
