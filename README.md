@@ -113,3 +113,79 @@ Build a project management using Django 5.x
 
 
 ## 5. ORM
+
+#### 1. Create projects and tasks from python inteface
+
+```
+	python
+
+	E:\_WORKSPACE\2024\django\2024-dj-project-management(main -> origin)
+
+	# Use the interface
+
+	(venv3125x) λ python manage.py shell
+	Python 3.12.1 (tags/v3.12.1:2305ca5, Dec  7 2023, 22:03:25) [MSC v.1937 64 bit (AMD64)] on win32
+	Type "help", "copyright", "credits" or "license" for more information.
+	(InteractiveConsole)
+	
+	# import models
+	>>> from projects.models import Project, Task
+
+	# create project objects
+	>>> project1 = Project.objects.create(name="IOS app development")
+	
+	# check the results
+	>>> print(project1)
+	>>> print(project1)
+	IOS app development
+	>>> print(project1.date_created)
+	2024-01-13 00:47:46.867128+00:00
+	>>> print(project1.description)
+	None
+
+	# create task objects
+	>>> task1 = Task.objects.create(title='Create interfaces',project=project1, description='Create interfaces for the IOS app')
+	
+	# check the result
+	>>> task1.status
+	'TO DO'
+
+	# update task
+	>>> task1.status = 'COMPLETED'
+	>>> task1.save()
+	>>> task1.status
+	'COMPLETED'
+	
+	# delete task
+	>>> task1.delete()
+	(1, {'projects.Task': 1})
+	
+	# Retrieving objects
+	>>> Project.objects.all()
+	<QuerySet [<Project: IOS app development>, <Project: IOS app development>]>
+	>>> project1.title = 'Android app development'
+
+	# save projects
+	>>> project1.save()
+	>>> Project.objects.all()
+	<QuerySet [<Project: IOS app development>, <Project: IOS app development>]>
+	>>> project1.name = 'Android app development'
+	>>> project1.save()
+
+	# Retrieving objects
+	>>> Project.objects.all()
+	<QuerySet [<Project: Android app development>, <Project: IOS app development>]>
+	>>> project2 = Project.objects.create(name='Web development', description='Project description')
+	>>> project2.save()
+	>>> Project.objects.all()
+	<QuerySet [<Project: Android app development>, <Project: IOS app development>, <Project: Web development>]>
+
+	# count projects
+	>>> Project.objects.all().count()
+	3
+
+```
+
+        modified:   README.md
+        new file:   projects/migrations/0002_alter_task_options.py
+        modified:   projects/models.py
