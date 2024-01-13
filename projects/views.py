@@ -115,9 +115,18 @@ class ProjectUpdateView(UpdateView):
 
 # Generic views: TaskUpdateView
 from django.views.generic.edit import CreateView, UpdateView
+from django.urls import reverse_lazy
 class TaskUpdateView(UpdateView):
 	model = Task
 	template_name = 'projects/task_update_form.html'
 	fields = ["title","description","project","assignee","due_date","status"]
 	success_url = reverse_lazy('tasks')
 
+
+# Generic views: ProjectDeleteView
+from django.views.generic.edit import CreateView,UpdateView,DeleteView
+from django.urls import reverse_lazy
+class ProjectDeleteView(DeleteView):
+	model = Project
+	template_name = 'projects/project_confirm_delete.html'
+	success_url = reverse_lazy('projects')

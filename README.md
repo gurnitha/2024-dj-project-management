@@ -304,3 +304,12 @@ Build a project management using Django 5.x
         modified:   templates/navbar.html
 
         :)
+
+#### 10. Generic views: ProjectDeleteView
+
+        new file:   projects/templates/projects/project_confirm_delete.html
+        modified:   projects/templates/projects/task-create.html
+        modified:   projects/urls.py
+        modified:   projects/views.py
+
+        :)
