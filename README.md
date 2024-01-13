@@ -244,3 +244,19 @@ Build a project management using Django 5.x
         modified:   projects/views.py
 
         Note: I forgot to save views.py file. No changed was made.
+
+#### 5. ModelForm - Create TaskForm
+
+        modified:   README.md
+        modified:   config/settings.py
+        new file:   projects/forms.py
+        new file:   projects/templates/projects/task-create.html
+        modified:   projects/urls.py
+        modified:   projects/views.py
+
+        Note:
+
+        1. Can not create a new task from the form.
+        2. To use Generic Views to perform CRUD operations
+
+        (:
