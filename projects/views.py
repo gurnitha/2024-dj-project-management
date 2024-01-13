@@ -112,3 +112,12 @@ class ProjectUpdateView(UpdateView):
 	fields = ["name","description"]
 	success_url = reverse_lazy('projects')
 
+
+# Generic views: TaskUpdateView
+from django.views.generic.edit import CreateView, UpdateView
+class TaskUpdateView(UpdateView):
+	model = Task
+	template_name = 'projects/task_update_form.html'
+	fields = ["title","description","project","assignee","due_date","status"]
+	success_url = reverse_lazy('tasks')
+

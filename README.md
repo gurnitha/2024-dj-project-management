@@ -285,3 +285,15 @@ Build a project management using Django 5.x
         new file:   projects/templates/projects/project_update_form.html
         modified:   projects/urls.py
         modified:   projects/views.py
+
+        :)
+
+#### 8. Generic views: TasktUpdateView
+
+        modified:   README.md
+        new file:   projects/templates/projects/task_update_form.html
+        modified:   projects/templates/projects/tasks.html
+        modified:   projects/urls.py
+        modified:   projects/views.py
+
+        :)
