@@ -7,8 +7,10 @@ urlpatterns  =  [
 	path('projects', views.projectList, name = 'projects'),
 	path('projects/<int:pk>', views.projectDetail, name ='project-detail'),
 	path('tasks', views.taskList, name ='tasks'),
+	# path('tasks', views.TaskListView.as_view(), name ='tasks'),
+	path('create-task', views.taskCreate, name ='create-task'),
 	path('tasks/<int:pk>', views.taskDetail, name ='task-detail'),
 
 	# CRUD
-	path('create-task', views.taskCreate, name ='create-task'),
+	path('create-project', views.ProjectCreateView.as_view(), name ='create-project'),
 ]

@@ -260,3 +260,16 @@ Build a project management using Django 5.x
         2. To use Generic Views to perform CRUD operations
 
         (:
+
+#### 6. Generic views: ProjectCreateView
+
+        modified:   README.md
+        new file:   projects/templates/projects/project_create_form.html
+        modified:   projects/templates/projects/tasks.html
+        new file:   projects/templates/projects/tasks.html_ori.html
+        modified:   projects/urls.py
+        modified:   projects/views.py
+
+        Note:
+
+        It worked :)

@@ -63,7 +63,7 @@ def taskDetail(request,pk):
 
 
 '''
-	=============CRUD==================
+	=============CRUD: Generic Views==================
 '''
 
 def taskCreate(request):
@@ -84,3 +84,23 @@ def taskCreate(request):
 			return redirect('tasks')
 	context = {'form':form}
 	return render(request, 'projects/task-create.html',context)
+
+
+# Generic views: TaskListView
+from django.views.generic import ListView
+class TaskListView(ListView):
+	model = Task
+	template_name = 'projects/tasks.html'
+
+
+# Generic views: ProjectCreateView
+from django.views.generic.edit import CreateView
+from django.urls import reverse_lazy
+from .models import Project
+class ProjectCreateView(CreateView):
+	model = Project
+	fields = ["name","description"]
+	template_name = 'projects/project_create_form.html'
+	success_url = reverse_lazy('projects')
+
+
