@@ -95,5 +95,18 @@ Build a project management using Django 5.x
 
 ## 4. MODELS
 
+#### 1. Create Project and Task models and superuser
+        
+        > (venv3125x) λ python manage.py makemigrations
+        > (venv3125x) λ python manage.py migrate
+        > (venv3125x) λ python manage.py createsuperuser
 
+        Username (leave blank to use 'ing'): superadmin
+        Email address: superadmin@mail.com
+        Password:superadmin
+        Password (again):superadmin
 
+        modified:   README.md
+        modified:   config/settings.py
+        new file:   projects/migrations/0001_initial.py
+        modified:   projects/models.py
