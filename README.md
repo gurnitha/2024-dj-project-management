@@ -409,4 +409,31 @@ Build a project management using Django 5.x
 
         :)
 
+#### 6. User Authorization
+
+        modified:   README.md
+        modified:   config/settings.py
+        modified:   projects/views.py
+
+        Note:
+
+        User Authorization
+
+        Authorization is the process of determining what an authenticated user can do. A superuser has all the permissions on the django system. 
+        
+        An unauthenticated user in django is called an anonymous user. 
+
+        To restrict access to views to only authenticated users, Django uses the login_required decorator.
+
+        1. Un-logged in user is now can not see projects or tasks
+        2. To see projects or tasks, user must login first.
+        3. If user want to see projects or tasks, but he has no account,
+           then he has to signup first, and then login.
+
+        :)
+
+
+
+
+
 

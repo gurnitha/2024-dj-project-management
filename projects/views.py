@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.shortcuts import get_object_or_404
 from django.db.models import Q
+from django.contrib.auth.decorators import login_required
 
 from .models import Project, Task 
 from .forms import TaskForm
@@ -27,6 +28,7 @@ def projects(request):
 	return render(request, 'projects/projects.html', context)
 
 
+@login_required()
 def projectList(request):
 	projects = Project.objects.all()
 	context = {'projects':projects}
@@ -44,6 +46,7 @@ def projectDetail(request,pk):
 	return render(request, 'projects/project-detail.html',context)
 
 
+@login_required()
 def taskList(request):
 	''' 
 	fetches all the tasks assigned to the currently 
