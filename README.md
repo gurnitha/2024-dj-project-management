@@ -1,5 +1,6 @@
 # 2024-dj-project-management
 Build a project management using Django 5.x
+https://github.com/gurnitha/2024-dj-project-management
 
 
 ## 1. SETUP
@@ -579,6 +580,18 @@ Build a project management using Django 5.x
            Note:
 
            NEXT: Should work on PasswordResetCompleteView
+
+#### 14. UserProfiles - PasswordResetCompleteView
+
+        new file:   users/templates/users/passwordreset-complete.html
+        modified:   users/urls.py
+
+        Note:
+
+        1. Lakukan steps yang sama spt di atas. 
+        2. Reset password is now completed successfully.
+
+        :)
 
 
 
