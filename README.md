@@ -523,6 +523,21 @@ Build a project management using Django 5.x
 
         (:
 
+#### 13. UserProfiles - Sending Emails
+
+        modified:   README.md
+        modified:   config/settings.py
+        
+        Django comes with a bultin EmailBackend which for sending emails. For the purpose of this
+        project, we will use the console backend. The console backend writes the emails that would
+        have been sent to the terminal
+        We need to enable it in the settings.py file.
+
+        EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
+        When a user requests a password reset via email, we will not send an actual email instead the, the email message will be shown in the terminal.
+
+
 
 
 
