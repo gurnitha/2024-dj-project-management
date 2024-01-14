@@ -432,6 +432,16 @@ Build a project management using Django 5.x
 
         :)
 
+#### 7. Showing and hidding some menus to un-authenticated user
+
+        modified:   README.md
+        modified:   templates/navbar.html
+        new file:   templates/navbar.html_old.html
+
+        :)
+
+
+
 
 
 
