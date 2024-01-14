@@ -366,3 +366,30 @@ Build a project management using Django 5.x
         Note:
 
         The signup form is now functional; we can sign up from our application. As you can see from the admin interface, the new user (test) does not have staff status and, therefore, cannot log in to the admin interface. We can also change the user permissions from the django admin interface.
+
+#### 4. LoginView - To login the new user
+
+        modified:   config/settings.py
+        modified:   templates/navbar.html
+        new file:   users/templates/users/login.html
+        modified:   users/urls.py
+        modified:   users/views.py
+
+        Note:
+
+        LoginView is a built-in class-based authentication view provided by django, which provides an easy way to log in to users in django. It handles all the login functionality in django by rendering the form, validating the data, and showing error messages if the user provides incorrect credentials when logging in.
+        
+        The LoginView uses the AuthenticationForm, a built-in form class from
+        django.contrib.auth.forms. 
+
+        The AuthenticationForm provides the built-in username and password fields. Open views.py and add the view for logging in users.
+
+        As you can see above, the form will show the necessary error messages if the form is not valid. By default, the built in authentication system will redirect the user a profiles page
+
+        To prevent seeing this error, we need to add a LOGIN_REDIRECT_URL in the settings .py file. Open the settings.py file and set the LOGIN_REDIRECT_URL to the tasks page.
+        
+        LOGIN_REDIRECT_URL ='tasks'
+
+        # new user can login now :)
+
+

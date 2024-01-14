@@ -31,3 +31,11 @@ def registration(request):
 	form = UserCreationForm
 	context = {'form':form}
 	return render(request, 'users/registration.html', context)
+
+
+from django.contrib.auth.forms import UserCreationForm,AuthenticationForm
+from django.contrib.auth.views import LoginView
+
+class UserLoginView(LoginView):
+	template_name = 'users/login.html'
+	form = AuthenticationForm
