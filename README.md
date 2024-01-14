@@ -446,6 +446,26 @@ Build a project management using Django 5.x
         new file:   users/migrations/0001_initial.py
         modified:   users/models.py
 
+#### 9. UserProfiles - Django signals
+
+        modified:   users/admin.py
+        modified:   users/models.py
+
+        Django signals
+
+        In simple terms, django signals work by notifying an application that an action has occurred elsewhere in the project. For example, we want a profile created every time a new user is created. To listen, receive and register a signal, django has a signal dispatcher that listens for signals throughout the application.
+        
+        A signal has a sender and a receiver. Let's define a signal receiver for creating a user profile. Open users/models.py and add the code below
+
+        Note:
+
+        1. Register Profile model to users/admin.py
+        2. Create a new user
+        3. New user was created and at the same time the profile also created
+
+        :)
+
+
 
 
 
