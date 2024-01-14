@@ -527,7 +527,7 @@ Build a project management using Django 5.x
 
         modified:   README.md
         modified:   config/settings.py
-        
+
         Django comes with a bultin EmailBackend which for sending emails. For the purpose of this
         project, we will use the console backend. The console backend writes the emails that would
         have been sent to the terminal
@@ -536,6 +536,53 @@ Build a project management using Django 5.x
         EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
         When a user requests a password reset via email, we will not send an actual email instead the, the email message will be shown in the terminal.
+
+#### 13. UserProfiles - PasswordResetConfirmView
+
+        new file:   users/templates/users/password-reset-form.html
+        modified:   users/urls.py
+
+        Note:
+
+        1. After clicking the Resset Password buttom, 
+           in the terminal it shows like this:
+
+           Content-Type: text/plain; charset="utf-8"
+           MIME-Version: 1.0
+           Content-Transfer-Encoding: 8bit
+           Subject: Password reset on 127.0.0.1:8000
+           From: webmaster@localhost
+           To: inyoman_gurnitha@yahoo.com
+           Date: Sun, 14 Jan 2024 03:07:36 -0000
+           Message-ID: <170520165632.2080.15149864418915576775@AFTER65>
+
+
+           You're receiving this email because you requested a password reset for your user account at 127.0.0.1:8000.
+
+           Please go to the following page and choose a new password:
+
+           http://127.0.0.1:8000/reset/MQ/c0seso-9f9c0d1ec660bd2e46bb2552c72e90ff
+
+           Your username, in case you’ve forgotten: superadmin
+
+           Thanks for using our site!
+
+           The 127.0.0.1:8000 team
+
+        2. After using the link:
+           http://127.0.0.1:8000/reset/MQ/c0seso-9f9c0d1ec660bd2e46bb2552c72e90ff
+           and clicking the Reset Password button, it shows like this:
+
+           NoReverseMatch at /reset/MQ/set-password
+           Reverse for 'password_reset_complete' not found. 'password_reset_complete' is not a valid view function or pattern name.
+
+           Note:
+
+           NEXT: Should work on PasswordResetCompleteView
+
+
+
+
 
 
 
