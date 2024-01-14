@@ -440,6 +440,12 @@ Build a project management using Django 5.x
 
         :)
 
+#### 8. UserProfiles - Create Profile model
+
+        modified:   README.md
+        new file:   users/migrations/0001_initial.py
+        modified:   users/models.py
+
 
 
 
