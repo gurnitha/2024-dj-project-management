@@ -356,3 +356,13 @@ Build a project management using Django 5.x
         modified:   users/views.py
 
         Note: It has no logic yet to be able register a new user
+
+#### 3. Add logic to User Registration
+
+        modified:   README.md
+        modified:   templates/navbar.html
+        modified:   users/views.py
+
+        Note:
+
+        The signup form is now functional; we can sign up from our application. As you can see from the admin interface, the new user (test) does not have staff status and, therefore, cannot log in to the admin interface. We can also change the user permissions from the django admin interface.
