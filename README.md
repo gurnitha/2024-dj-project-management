@@ -487,7 +487,27 @@ Build a project management using Django 5.x
         5. Photo still was not able to upload, but I kept it blank
 
         :)
+
+#### 11. UserProfiles - Password reset
             
+        modified:   users/templates/users/login.html
+        new file:   users/templates/users/password-reset.html
+        modified:   users/urls.py
+        modified:   users/views.py
+
+        Note:
+
+        1. After clicking the Resset Password buttom, it shows like this:
+
+        http://127.0.0.1:8000/reset_password
+        Forbidden (403)
+        CSRF verification failed. Request aborted.
+
+        NEXT: Solving the problem by PasswordResetDoneView
+
+        (:
+
+
 
 
 
