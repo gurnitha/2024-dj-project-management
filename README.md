@@ -392,4 +392,21 @@ Build a project management using Django 5.x
 
         # new user can login now :)
 
+#### 5. Logout User - To logout the logged in user
+
+        modified:   README.md
+        modified:   templates/navbar.html
+        modified:   users/urls.py
+        modified:   users/views.py
+
+        Note:
+
+        Django also provides a built-in logout() function, which logouts the current user and clears the session data. 
+
+        To log out a user, we call the logout function and pass the request object as shown in users/views.py: logout_user.
+
+        # the logged in user is now can logout and redirect him to login page
+
+        :)
+
 

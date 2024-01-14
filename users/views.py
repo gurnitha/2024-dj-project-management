@@ -20,6 +20,8 @@ features.
 # 	context = {'form':form}
 # 	return render(request, 'users/registration.html', context)
 
+
+# REGISTER a new user
 def registration(request):
 	if request.method == "POST":
 		form = UserCreationForm(request.POST)
@@ -33,9 +35,17 @@ def registration(request):
 	return render(request, 'users/registration.html', context)
 
 
+# LOGIN the registered user
 from django.contrib.auth.forms import UserCreationForm,AuthenticationForm
 from django.contrib.auth.views import LoginView
-
 class UserLoginView(LoginView):
 	template_name = 'users/login.html'
 	form = AuthenticationForm
+
+
+# LOGOUT the logged in user
+from django.contrib.auth import login,logout
+from django.shortcuts import render,redirect
+def logout_user(request):
+	logout(request)
+	return redirect("login")
