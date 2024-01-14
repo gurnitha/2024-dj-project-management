@@ -507,6 +507,23 @@ Build a project management using Django 5.x
 
         (:
 
+#### 12. UserProfiles - PasswordResetDoneView
+
+        modified:   README.md
+        new file:   users/templates/users/password-reset-done.html
+        modified:   users/urls.py
+
+        Note:
+
+        1. After clicking the Resset Password buttom, it shows like this:
+           NoReverseMatch at /reset_password Reverse for 'password_reset_confirm' not found. 'password_reset_confirm' is not a valid view function or pattern name.
+
+        2. But page look ok within this path: 
+           http://127.0.0.1:8000/password_reset/done/
+
+        (:
+
+
 
 
 
