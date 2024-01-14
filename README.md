@@ -465,6 +465,29 @@ Build a project management using Django 5.x
 
         :)
 
+#### 10. UserProfiles - Profile update
+
+        new file:   ing.jpeg
+        new file:   users/forms.py
+        modified:   users/models.py
+        new file:   users/templates/users/profile-update-form.html
+        modified:   users/urls.py
+        modified:   users/views.py
+
+        Note:
+
+        1. Now we can update user profile 
+           via http://127.0.0.1:8000/update-profile
+           but could not upload photo.
+        2. I modified the Profile model
+           from : photo =models.ImageField()
+           to 	: photo =models.ImageField(blank=True,null=True)
+        3. Run migrations
+        4. Fill in the Update profile form + update
+        5. Photo still was not able to upload, but I kept it blank
+
+        :)
+            
 
 
 
